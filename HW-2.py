@@ -1,13 +1,13 @@
 import numpy as np
-personscore=np.dtype({
+personscore = np.dtype({
     'names':['name','chinese','math','english'],
     'formats':['S32','i','i','i']
 }
 )
-peoples=np.array([('ZhangFei',68,65,30),('GuanYu',95,76,98),('LiuBei',98,86,88),('DianWei',90,88,77),('XuShu',80,90,90)],dtype=personscore)
-chineses=peoples['chinese']
-maths=peoples['math']
-englishs=peoples['english']
+peoples = np.array([('ZhangFei',68,65,30),('GuanYu',95,76,98),('LiuBei',98,86,88),('DianWei',90,88,77),('XuShu',80,90,90)],dtype=personscore)
+chineses = peoples['chinese']
+maths = peoples['math']
+englishs = peoples['english']
 print('语文平均值为：%f'%np.mean(chineses))
 print('数学平均值为：%f'%np.mean(maths))
 print('英语平均值为：%f'%np.mean(englishs))
